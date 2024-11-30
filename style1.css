@@ -1,0 +1,264 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    height: auto;
+    background-color: #0A0A0A;
+    animation: opa 2s ease;
+}.landing-page{
+    height: 100vh;
+}.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding-top:2% ;
+    >h1{
+        font-family: "Press Start 2P", serif;
+        color: #B5B8A6;
+        font-size: 1rem;
+        border: 1px solid #E8D5B5;
+        padding: 1em;
+        width: 25%;
+        border-radius: 45px;
+    } 
+}#container{  
+    display: flex;
+    height: 50vh;   
+    margin-top: 70px;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+
+    >h1{
+        color: #B5B8A6;
+        font-family: "Rubik Microbe", system-ui;
+        font-weight: 100;
+        font-size: 5.625rem;
+    }.Pixel{
+        margin-right: 200px;
+    }.lain{
+        text-align: right;
+        }
+}.imgContainer{
+    width: 16%;
+    height: 90%;
+    font-size: 11px;
+    color: #3B3B3B;
+    
+    >img{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 35%;
+        padding: 0.625rem;
+    }
+}#buttonsContainer{
+    display: flex;
+    gap: 27%;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+
+    >a{
+        text-decoration: none;
+        margin-left: 1rem;
+        font-size: 0.8rem;
+        color: #F2ECFF;
+        font-family: "Roboto Slab", serif;
+        margin-left: 5%;
+        opacity: 0.5;
+
+    }>button{
+        width: 100%;
+        font-size: 1rem;
+        width: 25%;
+        padding: 0.8em;
+        border-radius: 25px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 500;
+        background-color: #0A0A0A;
+        opacity: 0.5;
+        border: 1px solid #F1F1E6;
+        cursor: pointer;
+
+        >a{
+            color: #F1F1E6;
+            opacity: 0.4;
+            text-decoration: none;
+        }
+    }
+}
+.buttonsContainer button:hover{
+    opacity: 1;
+}#buttonsContainer a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}.text-wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: #0A0A0A;
+}.text-wrapper p {
+    color: #EBEAE6;
+    white-space: nowrap;
+    padding: 0 1rem;
+    letter-spacing: 1px;
+    animation: move-rtl 5000ms linear infinite;
+    font-family:"press start 2p";
+}
+
+#behind_the_scene{
+    height: auto;
+    background-color: #0A0A0A;
+}#Behind-the-scene-Header {
+    padding: 4rem;
+    height: 35vh;
+    font-family: "Roboto Slab", serif;
+    >h1{
+        font-size: 5rem;
+        color: #3B3C36;
+    }
+    >p{
+        color: #3B3C36;
+        opacity: 0.5;
+    }
+}.card_Container{
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+}#kristanica, #Myke, #Joseph, #Miken, #Luke, #Dean{
+    width: 45%;
+    height: 30%;
+    background-color: #181715;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    border: 1px solid #4A463F;  
+}.info p{
+    color: #B5B8A6;
+    font-family: "Roboto Slab", serif;
+}.name{
+    >h2{
+        color: #3B3C36;
+        font-family: "Roboto Slab", serif;
+    }>p{
+        color: #3B3C36;
+        font-family: "Roboto Slab", serif;
+    }   
+}.img_Container{
+    height: 35%;
+    width: 28%;
+}.img_Container img{
+    height: 100%;
+    width: 100%;
+}
+
+/*KEyframe1 RIght to left animation*/
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}/*Animation in Landing page ("On Air") --END--*/
+@keyframes opa {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
+
+.reveal {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal.appear {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+/*MEDIA QUARIES*/
+@media (max-width: 344px){
+    .card_Container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }.Card{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+@media(max-width: 414px){
+    html{
+        font-size: 12px;
+    }.landing-page{
+        height: 80vh;
+    }.header{
+        >h1{
+            font-size: 1rem;
+            width: 75%;
+        }
+    }#container{
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 25px;
+        >h1{
+            font-size: 3rem;
+        }p{
+        font-size: 0.7rem;
+        }.Pixel{
+            margin-right: 0px;
+        }
+    }.imgContainer{
+        width: 37%;
+        height: 50%;
+    }#Behind-the-scene-Header {
+        padding: 2rem;
+        height: 30vh;
+        font-family: "Roboto Slab", serif;
+        >h1{
+            font-size: 3rem;
+            color: #3B3C36;
+        }
+    }#buttonsContainer{
+        gap: 16%;
+        height: 10vh;
+        >button{
+            width: 35%;
+            font-size: 0.8rem;
+        }>a{
+            font-size: 0.5rem;
+        }
+    }.text-wrapper{
+        margin-top: 50px;
+    }.card_Container{ 
+        height: 250vh;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }#kristanica, #Myke, #Joseph, #Miken,#Luke,#Dean{
+        width: 90%;
+        margin: auto;
+
+    }
+}
+
+
+

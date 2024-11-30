@@ -1,0 +1,1494 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    >a{
+        text-decoration: none;
+    }
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+    overflow-x: hidden;
+}
+section{
+    width: 1850px;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0 auto;
+   
+}
+:root{
+    --text-color:#B5B8A6;
+    --primary-color:#181715;
+    --border-color:#4A463F;
+    --body-color:#0E0E0E;
+    --wrapper-color:#EBEAE6;
+    --wrapper-background:#2a2626;  
+    --footer-box-color:#808372;
+    --back-color-in-cards:#141412;
+}
+.lightmode{
+    --text-color:#282925;
+    --primary-color:#dbd0bc;
+    --border-color:#b1a897;
+    --body-color:#dad5d5;
+    --wrapper-color:#4c4c4a;
+    --wrapper-background:#d1c3c3;
+    --footer-box-color:#dbd0bc;
+    --back-color-in-cards:#dbd0bc;
+}
+#theme{
+    margin-top: 15px;
+    color:var(--text-color);
+    border: 0.063rem solid var(--border-color);  
+    padding:1.25rem;
+    border-radius: 5rem;
+    width: fit-content;
+    background-color: transparent;
+}
+#theme i{
+    color:var( --text-color);
+    font-size: 20px;
+    cursor:pointer;
+}#theme i:last-child{
+    display:none;
+}.lightmode #theme i:first-child{
+    display:none;
+}.lightmode #theme i:last-child{
+    display:block;
+}
+.headerBtn{
+    font-family: 'Roboto';
+    color: var(--text-color);
+}
+.webTitle{
+    color: var(--text-color);
+    font-size: 10px;
+    font-family: 'press start 2p';
+    font-weight: lighter;
+    height: max-content;
+   
+}
+.positionRelative{
+    position: relative;
+}
+
+.positionAbsolute{
+    position: absolute;
+}
+.arch{
+    display: block;
+    left: 0.5%;
+    margin-top: 0.1%;
+}
+.displayBlock{
+    display: block;
+}
+.titleContainer{
+    margin: 2em 0;
+    position: relative;
+    right: 2.4rem;
+}.Titul:hover{
+        text-decoration: none;
+    
+}
+.homePgBtn{
+    width: 600px;
+    height: 50px;
+    border-radius: 150px;
+    border: 1px solid var(--wrapper-color);
+    background-color: transparent;
+    color: var(--text-color);
+    margin-top: 2rem;
+    opacity: 50%;
+    position: relative;
+    left: 4em;
+    bottom: 0.4rem;
+    >a{
+        color: var(--text-color);
+        padding: 10px;
+        opacity: 0.7;
+        font-weight: 900;
+
+    }
+}a:hover{
+        text-decoration: underline;
+        opacity: 1;
+}
+.contactBtn{
+    width: 210px;
+    height: 50px;
+    border-radius: 150px;
+    border: 1px solid var(--wrapper-color);
+    background-color: transparent;
+    color: var(--text-color);
+    margin-top: 2rem;
+    opacity: 50%;
+    position: relative;
+    bottom: 0.4rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 5rem;
+    height: 70px;
+    animation: opa 2s ease;
+}
+.landingIntro p {
+    color: var(--text-color);
+    font-family: "press start 2p";
+    font-size: 10px;
+    animation: opa 2s ease;
+   
+}
+.landingIntro{
+    position: relative;
+    right: 55rem;
+    top: 3.5rem;
+    margin: 0% auto;
+    width: max-content;
+}
+
+.landingPage1{
+    margin: 0 auto;
+    width: 1870px;
+    position: relative;
+    left: 1em;
+    padding: 1em;
+}
+.landingMotto h1{
+    color: var(--text-color);
+    font-family: 'roboto slab';
+    font-size: 6rem;
+    opacity: 50%;
+    animation: opa 2s ease;
+    margin: 0 auto;
+}
+
+.landingMotto{
+    position: relative;
+    left: 22rem;
+    top: 17em;
+    font-weight: bold;
+    width: max-content;
+    animation: opa 2s ease;
+    margin: 0 auto;
+   
+}
+.sliderContainer{
+    animation: opa 2s ease;
+    position: relative;
+    top: 14em;
+    right: 27rem;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 575px;
+    margin: 0 auto;
+}
+.sliderContainer .slider .items{
+    width: 225px;
+    height: 250px;
+    position: absolute;
+    top: 74%;
+    transform: translate(-5%, -40%); 
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+   transition: 1s ease;
+}
+
+.slider .items:nth-child(1){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+.slider .items:nth-child(2){
+    left: calc(50% + 300px);
+   
+}
+.slider .items:nth-child(3){
+    left: calc(50% + 550px);
+}
+.slider .items:nth-child(4){
+    left: calc(50% + 810px);
+}
+.slider .items:nth-child(5){
+    left: calc(50% + 1060px )
+}
+.slider .items:nth-child(6){
+    left: calc(50% + 1320px );  
+    
+}
+.slider .items:nth-child(n + 7){
+    left: calc(50% + 1550px );  
+    opacity: 0%;
+}
+.items .title p{
+    position: absolute;
+    bottom: 0%;
+    width: 300px;
+    text-align: left;
+    transform: translate(0, 160%);
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+.btnProjectBtn{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    right: 50rem;
+    top: 2.75rem;
+    animation: opa 2s ease;
+    margin: 0 auto;
+  
+}
+.btnProjectBtn button:hover{
+    cursor: pointer;
+    
+}
+a{
+
+
+.prjBtn{
+    border: 1px solid var(--wrapper-color);
+    background-color: transparent;
+    border-radius: 150px;
+    opacity: 50%;
+    width: 250px;
+    height: 41px;
+    font-family: 'roboto-slab';
+    font-size: 12px;
+    color: var(--text-color);
+  
+}
+}
+.prjBtn:hover{
+    opacity: 100%;
+}
+.btnSliderNext{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    left: 51rem;
+    animation: opa 2s ease;
+    margin: 0 auto;
+}
+.next{
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    opacity: 50%;
+    font-family: 'roboto';
+    font-size: 2rem;
+    
+}
+.next:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+.webDirection{
+    position: relative;
+    top: 1rem;
+    left: 51rem;
+    animation: opa 2s ease;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
+.scroolDown{
+    color: var(--wrapper-color);
+    opacity: 50%;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+@keyframes opa {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
+
+.artistCont{
+    margin: 5em auto;
+    width:  1825px;
+    height: 1024px;
+    display: flex;
+    position: relative;
+    right: 1em;
+    justify-content: space-around;
+    
+}
+.artistPic{
+    width: 900px;
+    height: 35rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 1.70rem;
+    top: 30%;
+}
+.imgDescription{
+    position: absolute;
+    bottom: -1.9rem;
+    font-family: 'roboto slab';
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--body-color);
+}
+.lain{
+    position: absolute;
+    color: var(--text-color);
+    transform: rotateX(180deg);
+    top: 7rem;
+    left: 31rem;
+}.bntLainStory button:hover{
+    cursor: pointer;
+}
+.artistProfile{
+    width: 45%;
+}
+hr{
+    width: 2px;
+    height: 120px;
+    transform: rotate(90deg);
+    background-color: var(--text-color);
+    position: absolute;
+    right: 22rem;
+    top: -0.5em;
+    
+}
+.artistLain{
+    position: absolute;
+    right: 18rem;
+    top: 0.9em;
+    
+}
+.artistTitle{
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    color: var(--text-color);
+    display: flex;
+    width: 300px;
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+}
+.artistDescription{
+    color: var(--text-color);
+    font-family: 'roboto';
+    font-size: 1.5rem;
+    position: relative;
+    width: 50rem;
+    text-align: justify;
+    line-height: 2rem;
+    top: 25rem;
+    left: 1rem;
+}
+.lainStoryBtn{
+    width: 16rem;
+    font-family: 'roboto slab';
+    border: 1px solid var(--text-color);
+    border-radius: 150px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 10px;
+    height: 3rem;
+}
+.bntLainStory{
+    position: relative;
+    top: 35rem;
+    left: 20rem;
+}
+.separatorContainer{
+    width: 100%;
+    overflow: hidden;
+    color: var(--wrapper-color);
+    font-size: 1rem;
+    font-family: 'press start 2p';
+    white-space: nowrap;
+    position: relative;
+    top: 10em;
+    background-color:  var(--wrapper-background);
+}
+.separator{
+    display: inline-block;
+    animation:  100s separate infinite linear;
+}
+@keyframes separate {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#directioon{
+    position: relative;
+    bottom: 6rem;
+    left: 51em;
+    animation: opa 2s ease;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
+.feedBackBgImg{
+    height: 100rem;
+    width: 55rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#feedBackSection{
+    height: max-content;
+    width: max-content;
+    margin-top: 10em;
+}
+.feedBackSection{
+    width: 1825px;
+    height: 1800px;
+    margin: 0 auto;
+    position: relative;
+    right: 1rem;
+    overflow: hidden;
+}
+.feedbackTitle{
+    font-family: 'roboto slab';
+    font-size: 6rem;
+    color: var(--text-color);
+    font-weight: bold;
+    position: relative;
+    left: 2rem;
+}
+.feedbackTitle::before {
+    content: 'THE FEEDBACKS';
+    position: absolute;
+    color: var(--body-color);
+    top: 10rem;
+}
+.feedbackTitle::after{
+    content: 'THE FEEDBACKS';
+    position: absolute;
+    color: var(--border-color);
+    top: 5rem;
+    left: 0;
+    width: 100%;
+}
+
+
+.chooseLainContainer{
+    position: relative;
+    top: 9rem;
+    left: 3rem;
+}
+
+.chooseLainContainer{
+color: var(--border-color);
+}
+.lainVisionContainer{
+    position: relative;
+    width: 30rem;
+    height: 178px;
+    text-align: right;
+    bottom: 135rem;
+    left: 80rem;
+}
+.lainVisionContainer p{
+color: var(--text-color);
+font-family: 'roboto';
+font-weight: 100;
+font-size: 2rem;
+}
+.feedBacksContainer{
+    width:250em;
+    position: relative;
+    left: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 58rem;
+    left: 1rem;
+  
+    
+}
+.feedBacks p { 
+color: var(--text-color);
+font-family: 'roboto';
+font-size: 1.5rem;
+font-weight: 350;
+backdrop-filter: blur(4px);
+animation: 2s move-rtl linear infinite;
+text-align: justify;
+height: 80%;
+}
+.feedbacks p, .feedBacks h1{
+    animation: 10000ms move-rtl linear infinite;
+}
+.feedBacks{
+    width: 100rem;
+    height: 30rem;
+    margin: 0 1rem;
+ 
+}
+.peoplesFeedBackContainer{
+    position: relative;
+    bottom: 60rem;
+    left: 2rem;
+    width: 40rem;
+}
+.peoplesFeedBackContainer h1{
+    color: var(--text-color);
+    font-family: 'roboto serif';
+    font-size: 4rem;
+    font-weight: 100;
+}
+.authorLain{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: 'roboto';
+    position: relative;
+    top: 8rem;
+}
+#webDirectionForFeedBacks{
+    position: relative;
+    top: -14em;
+    left: 30rem;
+    
+}
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}s
+
+
+
+
+
+.commissionBg{
+    width: 100%;
+    height: 43em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#commissionSection{
+    width: 1900px; 
+    margin: 9em auto;
+    position: relative;
+    height: 90em;
+}
+
+.commisionFormContainer{
+    width: 1400px;
+    height: 550px;
+    position: absolute;
+    border-radius: 61px;
+    background-color: #181715;
+    left: 20em;
+    top: 16em;
+    padding: 2rem;
+    border-bottom: 5px solid var(--text-color);
+    
+}
+.commissionTitle h1{
+    color: #000000;
+    font-family: 'roboto slab';
+    font-weight: bold;
+    font-size: 4rem;
+    position: relative;
+    left: 9em;
+    bottom: 9em;
+}
+.commisionFormContainer  h1{
+    color: var(--wrapper-color);
+    font-family: 'roboto';
+    font-weight: 300;
+    opacity: 75%;
+}
+.commisionFormContainer  h2{
+    color: var(--wrapper-color);
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 3rem;
+    opacity: 75%;
+}
+.commisionFormContainer  form{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 300px;
+    margin-top: 2rem;
+    position: relative;
+    left: 11em;
+    justify-content: space-between;
+}
+.nameTxtBx{
+    height: 60px;
+    background-color: var(--body-color);
+    border: none;
+    color: var(--text-color);
+    text-align: center;
+}
+.emailTxtBx{
+    height: 60px;
+    background-color: var(--body-color);
+    border: none;
+    color: var(--text-color);
+    text-align: center;
+}
+.messageTxtBx{
+    height: 150px;
+    background-color: var(--body-color);
+    border: none;
+    color: var(--text-color);
+    text-align: center;
+}
+.submitBtn{
+ border: none;   
+ background-color:var(--wrapper-color);
+ color:var(--body-color);
+ width: 320px;
+ height: 60px;
+ font-family: 'roboto';
+ font-size: 1rem;
+ position: relative;
+ left: 32.5em;
+ top: 1.1rem;
+ cursor: pointer;
+}
+
+
+.commisionDescription{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'roboto';
+    color: var(--text-color);
+    letter-spacing: 5px;
+    width: 45rem;
+    position: relative;
+    top: 7em;
+    left: 40em;
+    text-align: center;
+}
+
+
+
+.allBoutLainContainer{
+width:  1825px;
+height: 1048px;
+margin: 30rem auto;
+
+}
+.allBoutTitle{
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+.allBoutTitle h1{
+    font-family: 'Rubik Microbe';
+    color: var(--text-color);
+    font-size: 9rem;
+    font-weight: 100;
+}
+.allBoutPicsContainer{
+    position: relative;
+    display: flex;
+    width: 75em;
+    margin: 1em auto;
+    justify-content: space-between;
+}
+.allBoutPicItems:nth-child(1){
+    width: 15em;
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.allBoutPicItems:nth-child(2){
+    width: 20em;
+    height: 30em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.allBoutPicItems:nth-child(3){
+    width: 15em;
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.allBoutFooter{
+    position: relative;
+    position: relative;
+    width: max-content;
+    margin: 1rem auto;
+}
+.allBoutFooter h1{
+    font-family: 'Rubik Microbe';
+    color: var(--text-color);
+    font-size: 9rem;
+    font-weight: 100;
+   
+    
+}
+.allBoutLainBtnContainer{
+    position: relative;
+    position: relative;
+    width: max-content;
+    margin: 0rem auto;
+}
+.allBoutLainBtn{
+    color:var(--body-color);
+    background-color: var(--wrapper-color);
+    width: 25em;
+    height: 4em;
+    font-family: 'roboto';
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+
+    >a{
+        color:var(--body-color);
+    }
+}
+.separatorContainer2{
+    width: 100%;
+    overflow: hidden;
+    color: var(--wrapper-color);
+    background-color:  var(--wrapper-background);
+    font-size: 1rem;
+    font-family: 'press start 2p';
+    white-space: nowrap;
+    position: relative;
+    top: -20em;
+}
+
+.contactContainer{
+    width:  1825px;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+.emailContainer{
+    width: 450px;
+    height: 400px;
+    background-color: var( --footer-box-color);
+    position: relative;
+    text-align: center;
+    right: 3rem;
+    margin-bottom: 4rem;
+}
+.emailContainer::after{
+    content: '';
+    width: 450px;
+    height: 400px;
+    z-index: -1;
+    position: absolute;
+    background-color: var(--wrapper-color);
+    left: 1em;
+    top: 1em;
+    
+}
+.emailContainer img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 11rem;
+}
+.emailContainer p {
+    font-family: 'roboto slab';
+    font-weight: 300;
+    font-size: 1rem;
+    position: relative;
+    top: 12rem;
+    
+}
+.contactDetailsContainer{
+    width: 1000px;
+}
+.contactTitleContainer{
+    width: max-content;
+    
+}
+.contactTitleContainer h1 {
+    color: var(--text-color);
+    font-family: 'roboto slab';
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+.contactTitleContainer h1 span {
+font-size: 6rem;
+font-weight: bold;
+position: absolute;
+width: max-content;
+left: 0;
+top: 1rem;
+}
+.contactDescriptionContainer{
+    position: relative;
+    width: 70rem;
+    top:8rem;
+
+
+}
+.contactDescriptionContainer p {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    
+    font-family: 'roboto';
+}
+.contactMediasContainer{
+    position: relative;
+    width: 55rem;
+    top: 15em;
+    display: flex;
+    justify-content: space-around;
+}
+.btnContact{
+border-radius: 50px;
+background-color: var(--back-color-in-cards);
+
+font-size: 1rem;
+width: 500px;
+height: 40px;
+border: 1px solid var(--text-color);
+margin: 0 1rem;
+>a{
+    color: var(--text-color);
+    font-family: "Roboto Slab", serif;
+}
+}
+.btnContact:hover{
+    background-color: var(--text-color);
+    cursor: pointer;
+    >a{
+        color: var(--body-color);
+        text-decoration: none;
+    }
+}
+
+/*
+
+.appear{
+    animation: reveal linear ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.appearBig{
+    animation: reveal linear ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.appearMid{
+    animation: reveal linear ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+.appearSmall{
+    animation: reveal linear ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes reveal {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+} 
+    */
+   
+.reveal {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .reveal.appear {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @media screen and (max-width: 767px){
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    
+    height: auto;
+    width: 415px;
+    overflow-x: hidden;
+    
+}
+section{
+  width: 390px;
+  
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+.titleContainer .webTitle {
+    font-size: 2rem;
+}
+.titleContainer{
+    position: relative;
+    top: 5em;
+    left: -1em;
+}
+header div .homePgBtn{
+    font-size: 7px;
+    width: 320px;
+    height: 30px;
+    position: relative;
+    left: -51em;
+
+}
+header .darkLightButton{
+    position: relative;
+    left: -21.9em;
+    top: 0.5em;
+   
+}
+
+.landingPage1{
+   
+    overflow: hidden;
+    width: 380px;
+    position: relative;
+    left: -0.5em;
+    height: 700px;
+}
+.landingPage1 .landingMotto h1{
+    font-size: 2.1rem;
+    position: relative;
+    width: 230px;
+    left: -7.5em;
+    top: -3em;
+}
+.landingPage1 .landingIntro p{
+    
+    font-size: 0.7rem;
+    position: relative;
+    left:67.8em;
+    top: 10.8em;
+}
+.landingPage1 .sliderContainer{
+    position: relative;
+    width: 160px;
+    height: 200px;
+    margin: 0 auto;
+    left: -1.5em;
+    top: 12em;
+}
+ .sliderContainer .slider .items{
+    width: 90px;
+    height: 120px;
+    position: absolute;
+    top: 63%;
+    transform: translate(-5%, -40%); 
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+  
+}
+.slider .items:nth-child(1){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    
+}
+.slider .items:nth-child(2){
+    left: calc(50% + 90px);
+   
+}
+.slider .items:nth-child(3){
+    left: calc(50% + 190px);
+}
+.slider .items:nth-child(4){
+    left: calc(50% + 320px);
+}
+.slider .items:nth-child(5){
+    left: calc(50% + 400px )
+}
+.slider .items:nth-child(6){
+    left: calc(50% + 500px );  
+    
+}
+.slider .items:nth-child(n + 7){
+    left: calc(50% + 600px );  
+    opacity: 0%;
+}
+.items .title p{
+    position: absolute;
+    bottom: 0%;
+    width: 300px;
+    text-align: left;
+    transform: translate(0, 160%);
+    font-size: 0.4rem;
+    color: #B5B8A6;
+
+}
+.landingPage1 .btnProjectBtn{
+    font-size: 1rem;
+    left: 0.3em;
+    top: 11em;
+    
+}
+.landingPage1 .btnProjectBtn .prjBtn{
+    font-size: 0.7rem;
+}
+.landingPage1 .btnSliderNext{
+    left:9em;
+    top: 5em;
+
+}
+.landingPage1 .btnSliderNext .next{
+    font-size: 1.5rem;
+    
+}
+.landingPage1 .webDirection{
+    left:0.5em;
+    top: 15em;
+
+}
+.landingPage1 .btnSliderNext .scroolDown{
+    font-size: 1rem;
+    
+}
+.separatorContainer{
+    position: relative;
+    top: 1em;
+    overflow: hidden;
+}
+
+
+.artistMainContainer{
+    position: relative;
+    left: -1em;
+    width: 380px;
+    height: 700px;
+    top: 2em;
+}
+.artistMainContainer .artistCont .artistPic{
+    width: 173px;
+    height: 575px;
+    position: relative;
+    left: 0.1em;
+    top: 2.5em;
+}
+.artistMainContainer .artistCont .artistPic .imgDescription h1{
+   font-size: 1rem;
+   position: relative;
+   top: -2em;
+}
+.lain{
+    font-size: 1rem;
+    position: absolute;
+    top: 1.5em;
+    left: 7em;
+    transform: rotateX(180deg);
+ }
+ .artistProfile .artistDescription{
+    font-size: 0.7rem;
+    width: 175px;
+    position: relative;
+    top: 1em;
+    left: -0.1em;
+    line-height: 1.7rem;
+ }
+ .artistProfile .artistTitle h1{
+    font-size: 1rem;
+    position: relative;
+    top: -11em;
+    left: -10em;
+ }
+ .artistProfile .artistTitle hr{
+    position: absolute;
+    height: 50px;
+    top: -4.8em;
+    left: -5em;
+ }
+ .artistLain{
+    position: absolute;
+    left: -3em;
+    top: 1em;
+    font-size: 1.5rem;
+ }
+ .artistCont{
+   
+    width:  390px;
+    height: max-content;
+    margin: 0em auto;
+    position: relative;
+    top: 2em;
+    left: 0.1em; 
+ }
+
+ #directioon{
+    position: relative;
+    left: 6.5em;
+    top: 4em;
+ }
+
+ .artistCont .bntLainStory{
+    position: relative;
+    top: 1.5em;
+    left: 2.5em;
+ }
+ .artistCont .bntLainStory .lainStoryBtn{
+    width: 100px;
+    height: 40px;
+ }
+
+#feedBackSection{
+    position: relative;
+    left: -0.6em;
+    width: 390px;
+    top: -5em;
+}
+ .feedBackSection{
+    width: 390px;
+    height: 900px;
+    margin: 0 auto;
+
+    
+ }
+ .feedBackSection .feedBackBgImg{
+    width: 200px;
+    height: 780px;
+    position: relative;
+    left: 12.5em;
+ }
+ .feedBackSection .feedBackBgImg .feedBackTitleContainer h1{
+   font-size: 1.3rem;
+   position: relative;
+   left: 0.5em;
+ }
+ .feedbackTitle::before {
+    position: absolute;
+    top: 1rem;
+}
+.feedbackTitle::after{
+   position: absolute;
+    top: 2rem;
+   
+}
+ .feedBackSection .feedBackBgImg .chooseLainContainer p{
+   font-size: 0.4rem;
+   position: relative;
+   top: -17em;
+   left: -5.5em;
+ }
+ .feedBacksContainer{
+    flex-direction: column;
+    height: 650px;
+    position: relative;
+    top: -42em;
+    width: 170px;
+    justify-content: space-between;
+    left: 1.5em;
+   
+   
+ }
+ 
+
+ .peoplesFeedBackContainer h1{
+    font-size: 0.8rem;
+    position: relative;
+    top: 22em;
+    left: 0.5em;
+ }
+.feedBacks{
+    width: 170px;
+    height: 100px;
+    position: relative;
+    text-align: left;
+   
+   overflow: hidden;
+   
+ }
+ .feedBackSection .feedbacks .feedBacksContainer .feedBacks p{
+    font-size: 0.380rem;
+    position: relative;
+
+ }
+ .authorLain h1{
+    font-size: 0.7rem;
+    position: relative;
+    top: -12em;
+   
+    z-index: 1;
+ }
+ .feedBackSection .lainVisionContainer{
+    position: relative; 
+    left: 2em;
+    top: -90.4em;
+    width: 160px;
+ }
+ .feedBackSection .lainVisionContainer p{
+    font-size: 0.8rem;
+    text-align: center;
+    }
+
+    #webDirectionForFeedBacks{
+        position: relative;
+        left: -0.5em;
+        top: -10em;
+    }
+    #commissionSection{
+        position: relative;
+        width: 380px;
+        top: -13em;
+        left: -0.7em;
+        height: 500px;
+    }
+    .commisionFormContainer{
+      width: 370px;
+      height: 220px;
+      position: relative;
+      left: 0.3em;
+      top: -9em;
+      margin: 0 auto;
+       
+    }
+    .commissionSection .commissionBg{
+        width: 100%;
+        height: 12em;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .commissionTitle{
+        position: relative;
+        left: -12.5em;
+        top: 4em;
+    }
+    .commissionTitle h1{
+        font-size: 1.5rem;
+      
+    }
+   
+    .commisionFormContainer h1,  .commisionFormContainer h2{
+       font-size: 0.5rem;
+    }
+    .commisionFormContainer form input{
+        width: 280px;
+        position: relative;
+        left: -13em;
+        height: 20px;
+    }
+    .commisionFormContainer form{
+        height: 100px;
+        position: relative;
+        top: -1em
+    
+    }
+    .commisionFormContainer form  .messageTxtBx{
+        height: 50px;
+    }
+    .commisionFormContainer .submitBtn{
+        height: 25px;
+        width: 92px;
+        position: relative;
+        left:9em;
+        top: -0.5em;
+        font-size: 0.7rem;
+    }
+    .commisionDescription{
+        position: relative;
+        width: 334px;
+        left: 2em;
+        height: max-content;
+        top: -6em;
+    }
+    .commisionDescription p {
+        font-size: 0.7rem;
+    }
+    #allBoutLainContainer{
+        position: relative;
+        top: -20em;
+        width: 380px;
+        left: -0.6em;
+    }
+    .allBoutLainContainer{
+    width:  380px;
+    height: 600px;
+    margin: 0 auto;
+
+    }
+    .allBoutLainContainer .allBoutTitle {
+       position: relative;
+       }
+    .allBoutLainContainer .allBoutTitle h1{
+     font-size: 48px;
+    }
+    .allBoutPicsContainer{
+        position: relative;
+        width: 23em;
+    }
+    .allBoutPicItems:nth-child(1){
+        width: 90px;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .allBoutPicItems:nth-child(2){
+        width: 130px;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .allBoutPicItems:nth-child(3){
+        width: 90px;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .allBoutLainContainer .allBoutFooter {
+        position: relative;
+        }
+    .allBoutLainContainer .allBoutFooter h1{
+    font-size: 48px;
+    }
+    .allBoutLainBtnContainer{
+        position: relative;
+        top: 2em;
+    }
+    .allBoutLainBtnContainer .allBoutLainBtn{
+        font-size: 1rem;
+        width: 250px;
+        height: 50px;
+    }
+    .separatorContainer2{
+        position: relative;
+        top: -5em;
+        overflow: hidden;
+    }
+    #contactContainer{
+        width: 380px;
+        position: relative;
+        left: -1em;
+        top: -1em;
+        overflow: hidden;
+        margin: 0 auto;
+        
+    }
+    .contactContainer{
+        width: 380px;
+        position: relative;
+        height: 350px;
+        margin: 0 auto;
+        
+    }
+
+    .contactContainer .contactDetailsContainer .contactTitleContainer{
+        position: relative;
+        left: 1em;
+    }
+    .contactContainer .contactDetailsContainer .contactTitleContainer h1{
+        font-size: 1rem;
+    }
+    .contactContainer .contactDetailsContainer .contactTitleContainer h1 span{
+        font-size: 2rem;
+    }
+    .contactDescriptionContainer{
+        position: relative;
+        top: 3em;
+        left: 1em;
+    }
+    .contactDescriptionContainer p{
+font-size: 12px;
+width: 369px;
+    }
+    .contactMediasContainer{
+        flex-direction: column;
+        height: 150px;
+        position: relative;
+        top: 5em;
+    }
+    .contactMediasContainer button{
+        width: 83px;
+        font-size: 12px;
+        
+    }
+    .contactContainer .emailContainer{
+        width: 230px;
+        height: 150px;
+        position: absolute;
+        left: 8em;
+        top: 10em;
+    }
+    .contactContainer .emailContainer::after{
+        content: '';
+        width: 230px;
+        height: 150px;
+        z-index: -1;
+        position: absolute;
+        background-color: #EEF5CE;
+        left: 1em;
+        top: 1em;
+        
+    }
+    .emailContainer img{
+        width: 15px;
+        height: 15px;
+        position: relative;
+    left: -0.1em;
+    top: 3em;
+    }
+    .emailContainer p {
+     
+        position: relative;
+        left: -0.1em;
+        top: 3em;
+        font-size: 1rem;
+        
+    }
+
+    #theme{
+        margin-top: 5px;
+        padding: 0.8rem;
+    }
+    .feedbacks p, .feedBacks h1{
+        animation: none;
+    }
+ /*border: 1px solid magenta; */
+}
