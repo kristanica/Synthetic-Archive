@@ -1,144 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="icon" href="STATICC/SA-Logo.png">
-        <link rel="stylesheet" href="styles.css">
-        <script src="theme.js" type = "text/javascript" defer></script>
-        <title>Syntethic Archive</title>
-    </head>
-    <body >
-
-        <header class = "header-container">
-            <nav>
-                <a href="index.html">
-                <h1>SYNTETHIC <br> ARCHIVES </h1>
-                </a>
-                <div class = "animitia">
-                    STATHIS
-                </div>
-                <button id = "theme"> 
-                    <i class='bx bxs-sun' ></i>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+    <link rel="icon" href="STATICC/SA-Logo.png">
+    <title>Synthetic Archive | Stathis</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" style="text-decoration: none; color: var(--text-main); font-weight: 900; font-size: 0.9rem;">SYNTHETIC ARCHIVE</a>
+            <div class="nav-links">
+                <a href="homepage.html">HOME</a>
+                <a href="ANIMITA.html">ANIMATED</a>
+                <button id="theme" style="margin-left: 2rem;">
+                    <i class='bx bxs-sun'></i>
                     <i class='bx bxs-moon'></i>
                 </button>
-            </nav>
-        </header>
-        <main>
-            <div class = "title-page">
-                <h1 id = "title">STATHIS </h1>
-                <div id = "title-info">Lain's static pixel art captures characters with vibrant color and expressive detail, <br>showcasing her skill and creativity in bringing scenes to life without motion.</div>
             </div>
-            <div class = "projects-container">
-                <div class = "project" id = "project-1">
-                    <img src = "STATICC/1.png" alt = "AUTUMN" ="https://www.deviantart.com/forheksed/art/Autumn-761991230">
-                </div>
-                <div class = "project-info">
-                    <h3>//1</h3>
-                    <div>
-                        <h2 class = "project-title">AUTUMN</h2>
-                    <p> Autumn is a tranquil digital artwork capturing a lone figure in a warm, sunlit autumn forest. With rich, golden hues and falling leaves, the scene evokes a peaceful, nostalgic atmosphere, celebrating the beauty and calm of the season</p>
-                    </div>
-                </div>
-                
-                <div class = "project" id = "project-2"><img src = "STATICC/2.png" alt = "[C] NIGHT FOREST" href = "https://www.deviantart.com/forheksed/art/C-Night-forest-886893770"></div>
-                <div class = "project-info">
-                    <h3>//2</h3>
-                    <div>
-                        <h2 class = "project-title">[C] NIGHT FOREST</h2>
-                    <p>Night Forest is a serene digital artwork portraying a quiet forest under a starry sky. The moonlight bathes the trees in a soft, mystical glow, creating a peaceful, dreamlike atmosphere that captures the beauty and stillness of the night.</p>
-                    </div>
-                </div>
-                <div class = "project" id = "project-3"> <img src = "STATICC/3.png" alt = "TITAN" href = "https://www.deviantart.com/orangemagik/art/Titan-550555137"></div>
-                <div class = "project-info">
-                    <h3>//3</h3>
-                    <div>
-                        <h2 class = "project-title">TITAN</h2>
-                    <p>Titan  depicts a massive, ancient stone figure towering over a landscape, shrouded in mist and mystery. The figure’s worn, cracked surface and immense scale evoke awe and a sense of forgotten power, blending fantasy and mythology in a haunting, majestic scene</p>
-                    </div>
-                </div>
-                <div class = "project" id = "project-4"><img src = "STATICC/4.png"  alt = "PINERY" href = "https://www.deviantart.com/1eni1/art/Pinery-587846969"></div>
-                <div class = "project-info">
-                    <h3>//4</h3>
-                    <div>
-                        <h2 class = "project-title">PINERY</h2>
-                    <p>Pinery is a serene digital artwork of a dense pine forest, bathed in soft, diffused light. The towering trees and gentle mist create a calm, atmospheric scene that captures the beauty and tranquility of nature</p>
-                    </div>
-                </div>
-                <div class = "project" id = "project-5"><img src = "STATICC/5.png"  alt = "MORNING FOG AT KHORYTSIA" href = "https://www.deviantart.com/forheksed/art/Morning-fog-at-Khortytsia-760229368"></div>
-                <div class = "project-info">
-                    <h3>//5</h3>
-                    <div>
-                        <h2 class = "project-title">MORNING FOG AT KHORYTSIA</h2>
-                    <p>Morning Fog at Khortytsia portrays a peaceful landscape shrouded in early morning mist. The soft, muted colors and hazy light create a serene, almost ethereal atmosphere, capturing the quiet beauty of dawn over Khortytsia.</p>
-                    </div>
-                </div>
-                <div class = "project"  id = "project-6"><img src = "STATICC/6.png" alt = "WESTERN VEIL NEBULA" href = "https://www.deviantart.com/5ldo0on/art/Western-Veil-Nebula-851148382" ></div>
-                <div class = "project-info">
-                    <h3>//6</h3>
-                    <div>
-                        <h2 class = "project-title">WESTERN VEIL NEBULA</h2>
-                    <p> Western Veil Nebula is a stunning digital artwork depicting a vibrant, colorful view of the Western Veil Nebula. With swirling clouds of bright blues, pinks, and purples, the piece captures the nebula’s ethereal beauty, evoking a sense of wonder at the vastness and mystery of space.</p>
-                    </div>
-                </div>
-                <div class = "project" id = "project-7"><img src = "STATICC/7.png" alt = "TRAIL" href="https://www.deviantart.com/5ldo0on/art/Trail-860300739"></div>
-                <div class = "project-info">
-                    <h3>//7</h3>
-                    <div>
-                    <h2 class = "project-title">TRAIL</h2>
-                    <p>Trail is a captivating digital piece that shows a lone figure walking along a glowing path under a starry sky. Surrounded by mountains and ethereal light, the scene evokes a sense of solitude, exploration, and the quiet beauty of a nighttime journey..</p>
-                    </div>
-                </div> 
-  
-                <div class = "project-info" id = "last-page">
-               
-                    <div>
-                    <h2 class = "project-title" id = "something">SOMETHING IS GOING ON  </h2>
-                    <a href="ANIMITA.html"><button id = "button-stathis">ANIMITIA</button></a>
-                    </div>
-                </div>   
+        </nav>
+    </header>
+
+    <main>
+        <section class="title-page">
+            <h1 class="reveal">Stathis</h1>
+            <div id="title-info" class="reveal">
+                A curated collection of static pixel art. Vibrant colors and expressive detail frozen in digital time.
             </div>
-            <div class = "drag"><p>TOOLS</p>
-            <div>
-                <ul>
-                        <li>PHOTOSHOP</li>
-                        <li>ASEPRITE</li>
-                        <li>BRAIN</li>
-                </ul>
-             
-            
+        </section>
+
+        <section class="projects-container">
+            <!-- Project 1 -->
+            <div class="project reveal">
+                <img src="STATICC/1.png" alt="AUTUMN">
             </div>
-        </main>
-        <div class="text-wrapper">
-            <p> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
+            <div class="project-info reveal">
+                <h3>FRAGMENT // 01</h3>
+                <h2 class="project-title">AUTUMN</h2>
+                <p>A tranquil forest scene in warm, golden hues. Celebrating the beauty and silence of the season.</p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project reveal">
+                <img src="STATICC/2.png" alt="NIGHT FOREST">
+            </div>
+            <div class="project-info reveal">
+                <h3>FRAGMENT // 02</h3>
+                <h2 class="project-title">NIGHT FOREST</h2>
+                <p>Serene digital portrayal of a quiet forest under a starry sky. Mystical and dreamlike.</p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project reveal">
+                <img src="STATICC/3.png" alt="TITAN">
+            </div>
+            <div class="project-info reveal">
+                <h3>FRAGMENT // 03</h3>
+                <h2 class="project-title">TITAN</h2>
+                <p>Ancient stone figure towering over a mysterious landscape. Immense scale and forgotten power.</p>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project reveal">
+                <img src="STATICC/4.png" alt="PINERY">
+            </div>
+            <div class="project-info reveal">
+                <h3>FRAGMENT // 04</h3>
+                <h2 class="project-title">PINERY</h2>
+                <p>A dense pine forest bathed in soft, diffused light. Capturing the tranquility of nature.</p>
+            </div>
+        </section>
+
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>SYSTEM STABLE // STATIC_ARCHIVE // FRAGMENT_LOADED // SYSTEM STABLE // STATIC_ARCHIVE // FRAGMENT_LOADED //</span>
+            </div>
         </div>
-    
-    
-    </body>
+        
+        <div style="padding: 10rem 2rem; text-align: center;">
+            <p style="font-size: 0.7rem; letter-spacing: 4px; color: var(--text-dim); margin-bottom: 3rem;">CORE_TOOLS: PHOTOSHOP / ASEPRITE / BRAIN</p>
+            <a href="ANIMITA.html" class="btn-minimal">Switch to Animated Archive</a>
+        </div>
+    </main>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
 </html>

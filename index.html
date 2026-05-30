@@ -1,190 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--LANDING PAGE (HTML FILE 1)-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--ICONS-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--Font 1-->
-    <!--p2p-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!--Font 2-->
-    <!--Rubik-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
-    <!--Font 3-->
-    <!--Roboto Slab-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik+Microbe&display=swap" rel="stylesheet">
-    <!--SCRIPTs-->
-    <script src="theme.js"></script>
-    <script src="script.js"></script>
-    <!--STYLE-->
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Homepage_imgs/SA-Logo.png">
-    <title>Pixel</title>
+    <title>Synthetic Archive</title>
+    <style>
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--text-dim);
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+        }
+    </style>
 </head>
 <body>
-    <div class="landing-page">
-        <div class="header">
-            <h1>SYNTETHIC ARCHIVE</h1>
-        </div>
-        <div id="container" >
-            <h1>EVERYTHING</h1>
-            <div class="imgContainer">
-                <p>THIS IS</p>
-                <img src="imgs/lains.jpg" alt="Lain Profile Picture">
-                <p class="lain">LAIN</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 style="font-size: 0.9rem;">Synthetic Archive</h1>
             </div>
-            <h1 class="Pixel">IS PIXEL</h1>
-        </div>
-        <div id="buttonsContainer" name="LAIN">
-            <a href="#behind_the_scene" class="scroll">SCROLL FOR MORE</a>
-            <button><a href="honePage.html">CONTINUE HER STORY</a></button>
-        </div>
-        
-        <div class="text-wrapper">
-            <p> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-        </div>
-    </div>
+            <div class="nav-links" style="display: flex; align-items: center;">
+                <button id="theme">
+                    <i class='bx bxs-sun'></i>
+                    <i class='bx bxs-moon'></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero">
+            <h1 class="reveal">Synthetic Archive</h1>
+            <p class="reveal">Exploring the intersection of art and technology.</p>
+            <div class="hero-btns reveal">
+                <a href="homepage.html" class="btn-minimal">Enter Archive</a>
+            </div>
+        </section>
 
-    <div id="behind_the_scene">
-        <div id="Behind-the-scene-Header" class="artistCont reveal">
-            <h1>BEHIND THE SPOTLIGHT</h1>
-            <p>BEHIND THE CREATION OF THIS WEBSITE</p>
-        </div>
-    
-    <div class="card_Container">
-        <!--Leewell CARD-->
-        <div id="kristanica" class="artistCont reveal">
-            <div class="img_Container">
-                <img src="imgs/Lee.png" alt="Leewell Profile">
-            </div>
-            <div class="name">
-                <h2>KRISTANICA</h2>
-                <p>DESIGNER / DEVELOPER</p>
-            </div>
-            <div class="info">
-                <p>Leewell is an energetic and artistic classmate with an affinity for gaming and an eclecticism to music tastes, where The Weeknd's smooth sounds have a special place. His pixel art he makes every now and then displays an artistic sense of bringing out the gameness and blending it into a retro look. This creative nature with an open-minded attitude toward music and its other hobbies makes him dynamic and interesting.</p>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>CURATED COLLECTIONS // PIXEL MANIPULATION // DIGITAL FRAGMENTS // CURATED COLLECTIONS // PIXEL MANIPULATION // DIGITAL FRAGMENTS //</span>
             </div>
         </div>
-        <!--MYKE CARD-->
-        <div id="Myke" class="artistCont reveal">
-            <div class="img_Container">
-                <img src="imgs/Myke.png" alt="Mike Profile">
-            </div>
-            <div class="name">
-                <h2>Mykeee</h2>
-                <p>DEVELOPER</p>
-            </div>
-            <div class="info">
-                <p>Mahal kita pero kailangan ko iligtas ang mundo.</p>
-            </div>
-        </div>
-        <!--JOSEPH CARD-->
-        <div id="Joseph" class="artistCont reveal">
-            <div class="img_Container">
-                <img src="imgs/Joseph.png" alt="Joseph Profile">
-            </div>
-            <div class="name">
-                <h2>JayD</h2>
-                <p>SKETCH / WIREFRAME</p>
-            </div>
-            <div class="info">
-                <p> Mataas tumalon, malalim bumaon <br>
-                    Nothing can stop him <br>
-                    Motto: "Move on, then life goes on" <br>
-                    Asteroid Destroyer, Leviathan Slayer, World Shaker <br>
-                    I love NingNing ❤️</p>
-            </div>
-        </div>
-        <!--MIKEN CARD-->
-        <div id="Miken" class="artistCont reveal">
-            <div class="img_Container">
-                <img src="imgs/Miken.png" alt="Miken Profile">
-            </div>
-            <div class="name">
-                <h2>Miks</h2>
-                <p>PROTOTYPE / DEVELOPER</p>
-            </div>
-            <div class="info">
-                <p>Ex. Favorite Student of Ma'am Jiane Monique Diamzon</p>
-            </div>
-        </div>
-        <!--LUKE CARD-->
-        <div id="Luke" class="artistCont reveal">
-            <div class="img_Container">
-                <img src="imgs/Luke.png" alt="Luke Profile">
-            </div>
-            <div class="name">
-                <h2>LukeDiabloImortal</h2>
-                <p>SKETCH / WIREFRAME</p>
-            </div>
-            <div class="info">
-                <p>21 From UnderNiCommander Street <br>
-                    "LEBRON" <br>
-                    Last Christmas 2024
-                </p>
-            </div>
-        </div>
-        <!--DEAN CARD-->
-        <div id="Dean" class="artistCont reveal">
-            <div class="img_Container">
-                <img src="imgs/Dean.png" alt="Dean Profile">
-            </div>
-            <div class="name">
-                <h2>Explicit</h2>
-                <p>PAPER WORKS</p>
-            </div>
-            <div class="info">
-                <p>iPhone 14+</p>
-            </div>
-        </div>
-    </div>    
-</div>
-<div class="text-wrapper">
-    <p> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-</div>
+    </main>
+
+    <footer style="padding: 5rem 2rem; border-top: 1px solid var(--border); text-align: center;">
+        <p style="font-size: 0.7rem; color: var(--text-dim); letter-spacing: 2px; text-transform: uppercase;">© 2026 Synthetic Archive // All Rights Reserved</p>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
+</html>

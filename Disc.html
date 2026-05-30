@@ -1,167 +1,177 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles1.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/566c00e5db.js" crossorigin="anonymous"></script>
-        <script src="theme.js" type = "text/javascript" defer></script>
-        <link rel="icon" href="ArtistProfile/SA-Logo.png">
-        <title>Syntethic Archive</title>
-    </head>
-    <body>
-        <header class = "header-container">
-            <nav>
-                <a href="index.html">
-                <h1>Syntethic <br> Archives</h1>
-                </a>
-                <div class = "animitia">
-                    ANIMITIA
-                </div>
-                <button id = "theme"> <i class='bx bxs-sun' ></i>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
+    <link rel="icon" href="ArtistProfile/SA-Logo.png">
+    <title>Synthetic Archive | Disclaimer</title>
+    <style>
+        .disclaimer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10rem 2rem;
+        }
+
+        .disclaimer-container h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .lead-text {
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            margin-bottom: 8rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .artist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 4rem;
+        }
+
+        .artist-card {
+            text-align: left;
+        }
+
+        .artist-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .artist-card:hover img {
+            filter: grayscale(0%);
+            border-color: var(--text-main);
+        }
+
+        .artist-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .artist-card .meta {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        .view-link {
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 700;
+            border-bottom: 1px solid var(--text-main);
+            padding-bottom: 2px;
+            transition: var(--transition);
+        }
+
+        .view-link:hover {
+            color: var(--text-dim);
+            border-color: var(--text-dim);
+        }
+
+        @media (max-width: 768px) {
+            .disclaimer-container h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" style="text-decoration: none; color: var(--text-main); font-weight: 900; font-size: 0.9rem;">SYNTHETIC ARCHIVE</a>
+            <div class="nav-links">
+                <a href="homepage.html">HOME</a>
+                <button id="theme" style="margin-left: 2rem;">
+                    <i class='bx bxs-sun'></i>
                     <i class='bx bxs-moon'></i>
-                   </button>
-            </nav>
-        </header>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-        <div class = "disclaimer">
-            <div class = "background-image">
-                <div class = "background-info">
-                <p class = "disc" id = "disclaimer">DISCLAIMER</p>
-                <p>The displayed artworks are a collaborative collection exploring digital art and pixel manipulation. This website is a school project to showcase these creative techniques . <br>Below are profiles of each artist, highlighting their unique approaches</p>
+    <main>
+        <section class="disclaimer-container">
+            <h1 class="reveal">Disclaimer</h1>
+            <p class="lead-text reveal">
+                The artworks displayed are a collaborative collection exploring digital art and pixel manipulation. 
+                This website is a curated portfolio showcasing creative techniques.
+            </p>
+
+            <div class="artist-grid">
+                <div class="artist-card reveal">
+                    <img src="ArtistProfile/1eni1.png" alt="1eni1">
+                    <h3>1eni1</h3>
+                    <p class="meta">FILM & ANIMATION</p>
+                    <a href="https://www.deviantart.com/1eni1" target="_blank" class="view-link">View Gallery</a>
+                </div>
+                <div class="artist-card reveal">
+                    <img src="ArtistProfile/5ldo0on.jpg" alt="5ldo0on">
+                    <h3>5ldo0on</h3>
+                    <p class="meta">DIGITAL ART</p>
+                    <a href="https://www.deviantart.com/5ldo0on" target="_blank" class="view-link">View Gallery</a>
+                </div>
+                <div class="artist-card reveal">
+                    <img src="ArtistProfile/forheksed.png" alt="forheksed">
+                    <h3>forheksed</h3>
+                    <p class="meta">DIGITAL ART</p>
+                    <a href="https://www.deviantart.com/forheksed" target="_blank" class="view-link">View Gallery</a>
+                </div>
+                <div class="artist-card reveal">
+                    <img src="ArtistProfile/kirokaze.jpg" alt="kirokaze">
+                    <h3>kirokaze</h3>
+                    <p class="meta">PIXEL MASTER</p>
+                    <a href="https://www.deviantart.com/kirokaze" target="_blank" class="view-link">View Gallery</a>
+                </div>
+                <div class="artist-card reveal">
+                    <img src="ArtistProfile/orangemagik.jpg" alt="orangemagik">
+                    <h3>orangemagik</h3>
+                    <p class="meta">VARIED ART</p>
+                    <a href="https://www.deviantart.com/orangemagik" target="_blank" class="view-link">View Gallery</a>
+                </div>
+                <div class="artist-card reveal">
+                    <img src="ArtistProfile/pixeljeff.jpg" alt="pixeljeff">
+                    <h3>pixeljeff</h3>
+                    <p class="meta">CONCEPT DESIGN</p>
+                    <a href="https://www.deviantart.com/pixeljeff" target="_blank" class="view-link">View Gallery</a>
                 </div>
             </div>
-        </div>
-        <div class = "profile-disclaimer">
-            <p class = "disc" id = "prof">PROFILES</p>
-            <p>The displayed artworks are a collaborative collection exploring digital art and pixel manipulation. This website is a school project to showcase these creative techniques . <br>Below are profiles of each artist, highlighting their unique approaches</p>
-            </div>
+        </section>
 
-        <main class = "profile-flex">
-           
-        
-                    <div class = profile id = "profile-1">
-                        <div class = "profile-info">
-                           <img src = "ArtistProfile/1eni1.png">
-                           <h3>1eni1</h3>
-                           <p>Artist  //  Professional  //  Film & Animation</p>
-                        </div>
-                           <div class = "button-container">
-                            <a href = "discord.gg" target="_blank"><button class = "social-button"><i class="fa-brands fa-discord"></i></button></a>
-                        </div>
-                        <div class  = "view">
-                            <a href = "https://www.deviantart.com/1eni1" target="_blank">View Gallery</a>
-                        </div>
-                    </div>
-                    <div class = profile  id = "profile-2">
-                        <div class = "profile-info">
-                        <img src = "ArtistProfile/5ldo0on.jpg">
-                        <h3>5ldo0on</h3>
-                        <p> Artist  //  Professional  //  Digital Art</p> 
-                    </div>
-                    <div class = "button-container">
-                            <a href = "http://www.instagram.com/kldpxl/" target = "_blank"><button class = "social-button"><i class="fa-brands fa-instagram"></i></i></button></a>
-                            <a href = "http://kldpxl.tumblr.com/" target = "_blank"><button class = "social-button"><i class="fa-brands fa-tumblr"></i></button></a>
-                            <a href = "http://twitter.com/kldpxl" target = "_blank"><button class = "social-button"><i class="fa-brands fa-x-twitter"></i></button></a>
-                        </div>
-                        <div class  = "view">
-                            <a href = "https://www.deviantart.com/5ldo0on" target="_blank">View Gallery</a>
-                        </div>
-                    </div> 
-                    <div class = profile  id = "profile-3">
-                        <div class = "profile-info">
-                        <img src = "ArtistProfile/forheksed.png">
-                        <h3>forheksed</h3>
-                        <p>Artist  //  Digital Art</p>
-                        </div>
-                        <div class = "button-container">
-                            <a href = "https://www.instagram.com/forheksed/" target = "_blank"><button class = "social-button"><i class="fa-brands fa-instagram"></i></i></button></a>
-                            <a href = "https://twitter.com/forheksed" target = "_blank"><button class = "social-button"><i class="fa-brands fa-x-twitter"></i></button></a>
-                        </div>
-                        <div class  = "view">
-                            <a href = "https://www.deviantart.com/forheksed" target="_blank">View Gallery</a>
-                        </div>
-                    </div>
-                    <div class = profile  id = "profile-4">
-                        <div class = "profile-info">
-                        <img src = "ArtistProfile/kirokaze.jpg">
-                        <h3>kirokaze</h3>
-                        <p>Artist  //  Professional  //  Digital Art</p>
-                        </div>
-                        <div class = "button-container">
-                            <a href = "https://www.instagram.com/kirokaze/" target = "_blank"><button class = "social-button"><i class="fa-brands fa-instagram"></i></i></button></a>
-                            <a href = "https://twitter.com/kirokaze" target = "_blank"><button class = "social-button"><i class="fa-brands fa-x-twitter"></i></button></a>
-                            <a href = "https://youtube.com/kirokaze" target = "_blank"><button class = "social-button"><i class="fa-brands fa-youtube"></i></button></a>
-                          
-                        </div>
-                        <div class  = "view">
-                            <a href = "https://www.deviantart.com/kirokaze" target="_blank">View Gallery</a>
-                        </div>
-                    </div>
-                    <div class = profile  id = "profile-5">
-                        <div class = "profile-info">
-                        <img src = "ArtistProfile/orangemagik.jpg">
-                        <h3>Orangemagik</h3>
-                        <p>Artist  //  Professional  //  Varied</p>
-                        </div>
-                        <div class = "button-container">
-                            <a href = "https://www.instagram.com/orangemagik/" target = "_blank"><button class = "social-button"><i class="fa-brands fa-instagram"></i></i></button></a>
-                            <a href = "https://www.pinterest.ru/orangemagik" target = "_blank"><button class = "social-button"><i class="fa-brands fa-pinterest"></i></button></a>
-                            <a href = "http://twitch.tv/orangemagik" target = "_blank"><button class = "social-button"><i class="fa-brands fa-twitch"></i></button></a> 
-                            <a href = "https://twitter.com/orangemagik" target = "_blank"><button class = "social-button"><i class="fa-brands fa-x-twitter"></i></button></a>
-                        </div>
-                        <div class  = "view">
-                            <a href = "https://www.deviantart.com/orangemagik" target="_blank">View Gallery</a>
-                        </div>
-                    </div>
-                    <div class = profile id = "profile-6">
-                        <div class = "profile-info">
-                        <img src = "ArtistProfile/pixeljeff.jpg">
-                        <h3>pixeljeff</h3>
-                        <p>Artist  //  Professional  //  Digital Art</p>
-                        </div>
-                        <div class = "button-container">
-                           <a href = "https://www.behance.net/pixeljeff" target = "_blank"><button class = "social-button"><i class="fa-brands fa-behance"></i></button></a>
-                           <a href = "https://www.facebook.com/PixelJeff/" target = "_blank"><button class = "social-button"><i class="fa-brands fa-facebook"></i></button></a>
-                           <a href = "https://www.instagram.com/pixeljeff_design/?hl=zh-tw" target = "_blank"><button class = "social-button"> <i class="fa-brands fa-instagram"></i></i></button></a>
-                           <a href = "https://pixeljeff.tumblr.com/" target = "_blank"><button class = "social-button"> <i class="fa-brands fa-tumblr"></i></button></a>
-                           <a href = "https://twitter.com/pixeljeff1995" target = "_blank"><button class = "social-button"><i class="fa-brands fa-x-twitter"></i></button></a>
-                        </div>
-                        <div class  = "view">
-                            <a href = "https://www.deviantart.com/pixeljeff" target="_blank">View Gallery</a>
-                        </div>
-                    </div>
-        </main>
-       
-        <div class="text-wrapper">
-            <p> <i class='bx bxs-star'></i>ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>CREDITS // ARTISTS // COLLABORATORS // CREDITS // ARTISTS // COLLABORATORS // CREDITS // ARTISTS // COLLABORATORS //</span>
+            </div>
         </div>
-    </body>
+    </main>
+
+    <footer style="padding: 5rem 2rem; text-align: center; border-top: 1px solid var(--border);">
+        <p style="font-size: 0.7rem; color: var(--text-dim); letter-spacing: 2px;">SYNTHETIC ARCHIVE // 2026</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
 </html>

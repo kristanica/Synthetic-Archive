@@ -1,223 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!--HOME PAGE (HTML FILE 2)-->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS STYLE-->
-    <link rel="stylesheet" href="style2.css">
-    <!--Script-->
-    <script src="theme.js" type = "text/javascript" defer></script>
-    <!--ICONS-->
+    <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--FONTS 1 (PRESS 2p)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!--FONT 2 (ROBOTO SLAB)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <!-- FONT 3 (ROBOTO0 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="WhoisLain_imgs/SA-Logo.png">
-    <title>About Lain</title>
+    <title>Synthetic Archive | About</title>
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10rem 2rem;
+        }
+
+        .about-container h1 {
+            font-size: 5rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .bio-lead {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            line-height: 1.4;
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+
+        .bio-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            margin-bottom: 5rem;
+            border: 1px solid var(--border);
+        }
+
+        .bio-content {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            column-count: 2;
+            column-gap: 4rem;
+            margin-bottom: 8rem;
+        }
+
+        .history-list {
+            border-top: 1px solid var(--border);
+        }
+
+        .history-item {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .history-item .year {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--text-dim);
+        }
+
+        .history-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .history-item p {
+            color: var(--text-dim);
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .bio-content { column-count: 1; }
+            .about-container h1 { font-size: 3rem; }
+            .history-item { grid-template-columns: 1fr; gap: 1rem; }
+        }
+    </style>
 </head>
 <body>
-    <!--HOME PAGE (START)-->
     <header>
-        <nav class="Nav-bar">
-
-            <button class="X-button"><a href="honePage.html">X</a></button>
-            <a href="index.html">
-            <h1>SYNTHETIC <br>ARCHIVES</h1>
-            </a>
-            <button id ="theme">
-                <i class='bx bxs-sun' ></i>
-                <i class='bx bxs-moon'></i>
-            </button>
-        </nav>  
+        <nav>
+            <a href="index.html" style="text-decoration: none; color: var(--text-main); font-weight: 900; font-size: 0.9rem;">SYNTHETIC ARCHIVE</a>
+            <div class="nav-links">
+                <a href="homepage.html">HOME</a>
+                <a href="STATHIS.html">PROJECTS</a>
+                <button id="theme" style="margin-left: 2rem;">
+                    <i class='bx bxs-sun'></i>
+                    <i class='bx bxs-moon'></i>
+                </button>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <div class="Homepage-1">
-            <div id="buttons">
-                <ul>
-                    <li><a href="#about" >ABOUT LAIN</a></li>
-                    <li><a href="#history" >HISTORY OF LAIN</a></li>
-                    <li><a href="#Inspire">WHAT INSPIRES HER</a></li>
-                    <li><a href="#Use">WHAT LAIN USES</a></li>
-                </ul>
+        <article class="about-container">
+            <h1 class="reveal">Lain</h1>
+            <p class="bio-lead reveal">A dedicated pixel artist exploring the delicate boundaries between the digital and the nostalgic.</p>
+            
+            <img src="WhoisLain_imgs/lains.jpg" alt="Lain" class="bio-image reveal">
+            
+            <div class="bio-content reveal">
+                <p>
+                    Lain is a passionate pixel artist known for her unique style and meticulous attention to detail. 
+                    Her vibrant, animated pieces breathe life into characters and worlds, often infused with a mysterious 
+                    and captivating quality that invites viewers to explore deeper narratives.
+                </p>
+                <br>
+                <p>
+                    Each artwork showcases her ability to transform simple pixels into intricate, expressive designs 
+                    that resonate emotionally. Lain’s creative process begins with conceptual sketches, 
+                    allowing her to visualize the story behind each piece.
+                </p>
             </div>
-            <div class="Slideshow-Container">
-            <div class="img-container">
-            </div>
-            <p><a href="">Scroll For More</a></p>
-        </div>
-            <div id="Text-Right">
-                    <p>WHERE IMAGINATION</p>
-                    <p>MEETS EVERY PIXEL</p>
-                    <p>LAIN'S ART</p>
-                    <p>TELLS THE STORY</p>
-                </ul>
-            </div>
-        </div>
-        <div class="text-wrapper">
-            <p> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-            <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-        </div>
-        
 
-        <!--PAGE 2-->
-        <div class="intro-to-lain-header">
-                
-            <p class="artistCont reveal">CURIOUS?</p>
-            <h1 class="artistCont reveal">INTRODUCTION TO LAIN</h1>
-            <p id="elaina" class="artistCont reveal">ELAINA HART</p>
-            <div class="arrow-btn">
-            <button class="artistCont reveal"><i class='bx bx-down-arrow-alt'></i></button><p class="artistCont reveal">ABOUT ME</p>
+            <div class="history-list">
+                <div class="history-item reveal">
+                    <span class="year">PHASE 01</span>
+                    <div>
+                        <h3>The Origin</h3>
+                        <p>Self-taught exploration into retro 8-bit designs and limited color palettes.</p>
+                    </div>
+                </div>
+                <div class="history-item reveal">
+                    <span class="year">PHASE 02</span>
+                    <div>
+                        <h3>Inspiration</h3>
+                        <p>Merging classic gaming aesthetics with modern urban landscapes and nature.</p>
+                    </div>
+                </div>
+                <div class="history-item reveal">
+                    <span class="year">PHASE 03</span>
+                    <div>
+                        <h3>The Toolkit</h3>
+                        <p>Advanced mastery of Aseprite, Photoshop, and Lospec for high-fidelity pixel animation.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="lain-card-page" id="about">
-            <div id="lain-card" class="artistCont reveal">
-                <div class="header">
-                    <p class="name" >ELAINA HART</p>
-                    <p>YOUR PARTNER IN CREATING <br> EVERYTHING PIXEL</p>
-                </div>
-                    <div class="image-container-info">
-                        <img src="WhoisLain_imgs/lains.jpg" alt="Lain Picture">
-                        <p class="info">Lain is a passionate pixel artist known for her unique style and meticulous attention to detail. Her vibrant, animated pieces breathe life into characters and worlds, often infused with a mysterious and captivating quality that invites viewers to explore deeper narratives. Each artwork showcases her ability to transform simple pixels into intricate, expressive designs that resonate emotionally. Lain’s creative process begins with conceptual sketches, allowing her to visualize the story behind each piece. As she translates these ideas into pixel art, she carefully selects color palettes and techniques that enhance the mood and character of her work. <br><br><br><br>
-
-                        Whether through personal projects or commissions, her dedication to her craft shines through in every pixel, as she continually seeks to improve her skills and experiment with new styles. Lain believes in the power of storytelling, blending nostalgia with contemporary themes to create a bridge between the past and the present. With each new </p>
-                    </div>
+            
+            <div style="margin-top: 10rem; text-align: center;">
+                <a href="homepage.html#footer" class="btn-minimal">Initialize Contact</a>
             </div>
-        
-            <div id="socials" class="artistCont reveal">
-                <button class="contact"><a href="https://www.facebook.com/MykeeeMayk/" target="_blank">FACEBOOK</a></button>
-                <button class="contact"><a href="https://www.instagram.com/tadashi_miruku/" target="_blank">INSTAGRAM</a></button>
-                <button class="contact"><a href="https://x.com/PrettyFckingMad" target="_blank">Twitter</a></button>
-            </div>
-        </div> 
-
-            <div class="more-about-page-title">
-                <h1 class="artistCont reveal">MORE ABOUT LAIN</h1>
-                <p class="artistCont reveal">ELAINA HART</p>
-            </div>
-                <div class="container">
-                    <div class="artistCont reveal">
-                    <div class="group" id="history-group">
-                    <div class="content">
-                        <p>Lain's pixel art journey began with a love for retro games and their blocky, expressive designs. Self-taught, she honed her skills in creating detailed art with limited palettes, eventually incorporating animation to bring her work to life. What started as a hobby evolved into a passion, leading her to take on personal projects and commissions, always pushing her creative boundaries</p>
-                    </div>
-                    <div class="title" id="history"><p>// 1 HISTORY OF LAN</p></div>
-                    </div>
-                    </div>
-                    <div class="artistCont reveal">
-                <div class="group" id="inspire-group">
-                    <div class="title" id="Inspire"><p>// 2 WHAT INSPIRES HER</p></div>
-                    <div class="content">
-                        <p>Lain finds inspiration in the charm of classic 8-bit and 16-bit video games, where simple pixel designs convey rich stories and emotions. This nostalgic influence fuels her passion for creating modern pixel art with a retro touch. Beyond games, Lain draws from the world around her—nature, urban landscapes, and everyday details—all of which shape her vibrant color choices and intricate designs. This blend of retro inspiration and real-world influences allows her to craft unique, story-driven pixel art that feels both timeless and contemporary</p>
-                    </div>
-                </div>
-                </div>
-                <div class="artistCont reveal">
-                <div class="group" id="use-group">
-                    <div class="content">
-                        <p>Lain primarily uses Aseprite to craft her pixel art, leveraging its intuitive tools for layering and frame-by-frame animation to create detailed, vibrant pieces. For more complex projects, she turns to Photoshop to refine her work and enhance details. She also uses Lospec to manage and optimize her color palettes, ensuring each piece maintains a cohesive and striking visual style. This blend of tools allows Lain to balance creativity with precision, bringing her pixel art visions to life</p>
-                    </div>
-                    <div class="title" id="Use"><p>// 3 WHAT LAIN USES</p></div>
-                </div>
-                </div>
-                </div>
-                
-
-                <div class="collab-page">
-                    <h1 class="artistCont reveal">DO YOU WANNA COLLABORATE?</h1>
-                    <p class="artistCont reveal">IS THERE SOMETHING YOU WANNA  ASK?</p>
-                    <div class="collab-btn">
-                        <button onclick="navigate()">DROP A MESSAGE</button>
-                        </div>
-                </div>
-
-                <div class="text-wrapper">
-                    <p> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                    <p><i class='bx bxs-star'></i> ON AIR <i class='bx bxs-star'></i></p>
-                </div>
-        
-                <footer class="foot">
-                    <div class="footer1">
-                        <p>HAVE A PROJECT IN MIND?</p>
-                    <H1>LET'S TALK</H1>
-                    <p class="text-info">
-                        Got something in mind? Reach out to me, Lain, through these social media channels! Whether it’s a project, idea, or collaboration, I’m always excited to hear new perspectives and explore creative opportunities. Let’s connect and bring something awesome to life!
-                    </p>
-                    <div class="buttons">
-                        <button class="contacts"><a href="https://www.facebook.com/MykeeeMayk/" target="_blank">FACEBOOK</a></button>
-                        <button class="contacts"><a href="https://www.instagram.com/tadashi_miruku/" target="_blank">INSTAGRAM</a></button>
-                        <button class="contacts"><a href="Disc.html">DISCLAIMER</a></button>
-                    </div>
-                    </div>
-                    <div class="footer2">
-                        <div class="email">
-                            <i class='bx bxs-envelope'></i>
-                            <p>Lainbylane@GMAIL.COM</p>
-                        </div>
-                    </div> 
-                </footer>
-
+        </article>
     </main>
 
+    <footer style="padding: 5rem 2rem; text-align: center; border-top: 1px solid var(--border);">
+        <p style="font-size: 0.7rem; color: var(--text-dim); letter-spacing: 2px;">SYNTHETIC ARCHIVE // 2026</p>
+    </footer>
 
+    <script src="theme.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

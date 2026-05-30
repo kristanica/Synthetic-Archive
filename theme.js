@@ -41,6 +41,6 @@ themebutton.addEventListener("click", () =>{
 })
 
 function navigate(){
-  window.location.href = 'honePage.html#commissionSection';
+  window.location.href = 'homepage.html#commissionSection';
 }
 
